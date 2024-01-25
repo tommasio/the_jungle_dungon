@@ -37,10 +37,10 @@
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"44d18979-b3f9-4921-8da3-66fd7ca8df64","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
-  "origin": 6,
+  "origin": 7,
   "parent": {
-    "name": "Sequences",
-    "path": "folders/Sequences.yy",
+    "name": "player",
+    "path": "folders/Sequences/player.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
@@ -87,7 +87,7 @@
     ],
     "visibleRange": null,
     "volume": 1.0,
-    "xorigin": 0,
+    "xorigin": 16,
     "yorigin": 64,
   },
   "swatchColours": null,

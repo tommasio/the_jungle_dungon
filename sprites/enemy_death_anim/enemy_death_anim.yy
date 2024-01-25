@@ -45,8 +45,8 @@
   "nineSlice": null,
   "origin": 7,
   "parent": {
-    "name": "Sequences",
-    "path": "folders/Sequences.yy",
+    "name": "enemy",
+    "path": "folders/Sequences/enemy.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

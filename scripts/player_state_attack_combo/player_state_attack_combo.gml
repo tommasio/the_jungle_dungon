@@ -4,10 +4,10 @@ function player_state_attack_combo(){
 	hsp = 0;
 	vsp = 0;
 
-	process_attack(player_attack_anim2,player_attack_anim2HB)
+	process_attack(player_attack_anim2,player_attack_animHB2)
 
 //Trigger Combo chian
-if(control_attack) && (image_index > 15 )
+if(control_attack) && (image_index > 12 )
 {
 	state = PLAYERSTATE.ATTACK_COMBO;	
 }

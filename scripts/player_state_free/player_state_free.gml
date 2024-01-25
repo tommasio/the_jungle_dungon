@@ -3,20 +3,36 @@
 function player_state_free()
 {
 
-	var _is_on_grass = place_meeting(x, y + 10, obj_grass)
+	mask_index = player_idle_anim;
+	var _is_on_grass = place_meeting(x, y + 1, obj_floor)
 	if !_is_on_grass max_x_speed = 1.5 else max_x_speed = 4
 	// Move right
 	if keyboard_check(control_right)  
 	{
+		image_xscale = 1
 	   physics_apply_force(x, y, x_force, 0); 
 	}
 
 	// Move left
 	if keyboard_check(control_left)
 	{
+		image_xscale = -1
 	   physics_apply_force(x, y, -x_force, 0); 
 	}
-	//attack input
+	
+	if abs(phy_speed_x) 
+	{
+		stepcounter += 1
+		if stepcounter = step_frames
+		{
+			audio_play_sound(walk_sound1, 0, false)
+		}
+		else if stepcounter = step_frames * 2
+		{
+			audio_play_sound(walk_sound2, 0, false)	
+			stepcounter = 0;
+		}
+	}
 
 	var is_jump = 0;
 	
@@ -26,6 +42,7 @@ function player_state_free()
 	   is_jump = true;
 	   jump_buffer_count = 0;
 	}
+	
 	// Check / increment jump buffer
 	if jump_buffer_count < jump_buffer
 	{
@@ -45,6 +62,14 @@ function player_state_free()
 	if attack_check() {
 		state = PLAYERSTATE.ATTACK_SLASH;
 		audio_play_sound(Sword_sweep,10,false)
+	} else if (abs(phy_speed_y) > 1) {
+		if (phy_speed_y <= 0) {
+			if (sprite_index != seq_player_jump_up)  sprite_index = seq_player_jump_up;	
+		}
+	} else if (_is_on_grass && phy_speed_x != 0) {
+		sprite_index = Player_run_anim;
+	} else {
+		sprite_index = player_idle_anim;	
 	}
 }
 
