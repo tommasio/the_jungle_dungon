@@ -8,3 +8,7 @@ function enemy_throw(_x_from, _y_from, _x_to, _y_to){
 		physics_apply_force(_x_from, _y_from, sign(_x_to - _x_from) * _throwing_force, sign(_y_to-64 - _y_from) * _throwing_force); 
 	}
 }
+
+function enemy_drop(_x_from, _y_from){
+	instance_create_layer(_x_from, _y_from, "Instances", dropable_item);
+}

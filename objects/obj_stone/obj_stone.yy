@@ -7,6 +7,7 @@
   "overriddenProperties": [
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},"propertyId":{"name":"can_throw","path":"objects/obj_enemy/obj_enemy.yy",},"value":"True",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},"propertyId":{"name":"run_sequence","path":"objects/obj_enemy/obj_enemy.yy",},"value":"seq_stone_run",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},"propertyId":{"name":"damage_points","path":"objects/obj_enemy/obj_enemy.yy",},"value":"10",},
   ],
   "parent": {
     "name": "enemy",

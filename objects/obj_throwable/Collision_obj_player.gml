@@ -3,4 +3,6 @@ if hit_player {
 	with(other) {
 		hit_player(_hit_damage)
 	}
+	
+	instance_destroy();
 }

@@ -3,6 +3,8 @@ if hit_enemy {
 	with(other) {
 		enemy_hit()
 	}
+	
+	instance_destroy();
 }
 
 

@@ -2,8 +2,8 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function enemy_state_free(){
 	
-	if (throwing_standstill_counter > 0) {
-		throwing_standstill_counter =- 1;	
+	if (attacking_standstill_counter > 0) {
+		attacking_standstill_counter -= 1;	
 	}
 	
 	var _player = obj_player.global_instance;
@@ -29,23 +29,45 @@ function enemy_state_free(){
 		throwing_counter += 1;
 		
 		if (throwing_counter == throwing_delay) {
-				throwing_standstill_counter = throwing_standstill;
+				attacking_standstill_counter = attacking_standstill;
 				enemy_throw(x,y + throwing_offset ,_player.x,_player.y);
 		}
 		if (throwing_counter % throwing_interval == 0) {
-				throwing_standstill_counter = throwing_standstill;
+				attacking_standstill_counter = attacking_standstill;
 				enemy_throw(x,y + throwing_offset,_player.x,_player.y);
+		}
+	}
+	
+	if (
+		_player && 
+		can_drop &&
+		_player.x > x - droping_range &&
+		_player.x < x + droping_range 
+	) {
+		droping_counter += 1;
+		
+		if (droping_counter == droping_delay) {
+				attacking_standstill_counter = attacking_standstill;
+				enemy_drop(x,y);
+		}
+		if (droping_counter % droping_interval == 0) {
+				attacking_standstill_counter = attacking_standstill;
+				enemy_drop(x,y);
 		}
 	}
 	
 	
 	hsp = 0;
 	
-	if (throwing_standstill_counter == 0) {
+	if (attacking_standstill_counter == 0) {
 		 hsp = dir * max_x_speed
 	}
 	
-	vsp += gravity;
+	if (!can_fly) {
+		vsp += gravity;
+	} else {
+		vsp = 0;
+	}
 
 	if (hsp> 0) {
 		image_xscale = 1;
