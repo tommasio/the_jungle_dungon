@@ -6,6 +6,7 @@ function enemy_state_free(){
 		attacking_standstill_counter -= 1;	
 	}
 	
+	
 	var _player = obj_player.global_instance;
 	if (
 		_player && 
@@ -30,11 +31,11 @@ function enemy_state_free(){
 		
 		if (throwing_counter == throwing_delay) {
 				attacking_standstill_counter = attacking_standstill;
-				enemy_throw(x,y + throwing_offset ,_player.x,_player.y);
+				enemy_throw(x,y- 50, _player.x, _player.y);
 		}
 		if (throwing_counter % throwing_interval == 0) {
 				attacking_standstill_counter = attacking_standstill;
-				enemy_throw(x,y + throwing_offset,_player.x,_player.y);
+				enemy_throw(x,y- 50, _player.x, _player.y);
 		}
 	}
 	
