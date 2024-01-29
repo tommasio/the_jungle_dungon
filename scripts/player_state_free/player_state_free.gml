@@ -27,7 +27,7 @@ function player_state_free()
 		{
 			audio_play_sound(walk_sound1, 0, false)
 		}
-		else if stepcounter = step_frames * 2
+		if stepcounter = step_frames * 2
 		{
 			audio_play_sound(walk_sound2, 0, false)	
 			stepcounter = 0;

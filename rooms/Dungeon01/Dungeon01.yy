@@ -48,6 +48,7 @@
     {"name":"inst_1C927662","path":"rooms/Dungeon01/Dungeon01.yy",},
     {"name":"inst_67D5EF6D","path":"rooms/Dungeon01/Dungeon01.yy",},
     {"name":"inst_208ADE31","path":"rooms/Dungeon01/Dungeon01.yy",},
+    {"name":"inst_327DFAFA","path":"rooms/Dungeon01/Dungeon01.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -102,6 +103,7 @@
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_warp_to","path":"objects/obj_warp_to/obj_warp_to.yy",},"propertyId":{"name":"targetRoom","path":"objects/obj_warp_to/obj_warp_to.yy",},"value":"Dungeon02",},
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_warp_to","path":"objects/obj_warp_to/obj_warp_to.yy",},"propertyId":{"name":"requires_opening","path":"objects/obj_warp_to/obj_warp_to.yy",},"value":"False",},
           ],"rotation":0.0,"scaleX":1.0,"scaleY":2.25,"x":1408.0,"y":312.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_327DFAFA","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_demon","path":"objects/obj_demon/obj_demon.yy",},"properties":[],"rotation":0.0,"scaleX":-1.0,"scaleY":1.0,"x":720.0,"y":264.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"Backgrounds_cave01","animationFPS":30.0,"animationSpeedType":0,"colour":4294967295,"depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"spriteId":{"name":"spr_dungen01","path":"sprites/spr_dungen01/spr_dungen01.yy",},"stretch":true,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],

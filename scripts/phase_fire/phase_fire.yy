@@ -1,11 +1,11 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "LR",
+  "name": "phase_fire",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "enemy",
-    "path": "folders/Scripts/enemy.yy",
+    "name": "phases 1",
+    "path": "folders/Scripts/enemy/phases/phases 1.yy",
   },
 }

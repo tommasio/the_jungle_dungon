@@ -1,8 +1,9 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function boss_state_fire(){
+function phase_fire(){
 
-instance_create_layer(x,y, Instances, obj_shadowbullet)
-
+can_drop = false 
+has_minions = false
+can_throw = true
 
 }

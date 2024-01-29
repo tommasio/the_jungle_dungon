@@ -39,6 +39,16 @@ function enemy_state_free(){
 		}
 	}
 	
+	
+	if has_minions = true  
+	{
+		minion_counter += 1
+		if minion_counter = 280
+		{
+			instance_create_layer(x+16,y, "Instances", minion)	
+			minion_counter = 0
+		}
+	}
 	if (
 		_player && 
 		can_drop &&
@@ -89,6 +99,35 @@ function enemy_state_free(){
 		hsp = 0;
 		dir *= -1;
 		
+	}
+	
+	if has_phases
+	{
+		var _sprite_index;
+		//phase 1
+		if hp = hp_amount_1 
+		{
+			_sprite_index = hp_phase_1
+				
+		}
+		//phase 2
+		else if hp = hp_amount_2
+		{
+			_sprite_index = hp_phase_2
+		}
+		//phase 3
+		else if hp = hp_amount_3
+		{
+			_sprite_index = hp_phase_3
+		}
+		else if hp = hp_amount_4
+		{
+			_sprite_index = hp_phase_4	
+		}
+		
+		if _sprite_index {
+			sprite_index = _sprite_index;	
+		}
 	}
 	
 	x += hsp;	
