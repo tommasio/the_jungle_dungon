@@ -39,7 +39,7 @@
     {"name":"spr_ddoor","order":14,"path":"sprites/spr_ddoor/spr_ddoor.yy",},
     {"name":"seq_player_jump_up","order":6,"path":"sprites/seq_player_jump_up/seq_player_jump_up.yy",},
     {"name":"player_attack_animHB","order":2,"path":"sprites/player_attack_animHB/player_attack_animHB.yy",},
-    {"name":"obj_shadowbullet","order":17,"path":"objects/obj_shadowbullet/obj_shadowbullet.yy",},
+    {"name":"obj_shadowbullet","order":6,"path":"objects/obj_shadowbullet/obj_shadowbullet.yy",},
     {"name":"enemy_state_dead","order":4,"path":"scripts/enemy_state_dead/enemy_state_dead.yy",},
     {"name":"seq_troll_attackHB","order":13,"path":"sprites/seq_troll_attackHB/seq_troll_attackHB.yy",},
     {"name":"seq_boss_minion_run","order":5,"path":"sprites/seq_boss_minion_run/seq_boss_minion_run.yy",},

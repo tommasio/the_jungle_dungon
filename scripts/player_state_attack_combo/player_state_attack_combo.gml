@@ -4,7 +4,7 @@ function player_state_attack_combo(){
 	hsp = 0;
 	vsp = 0;
 
-	process_attack(player_attack_anim2,player_attack_animHB2)
+	process_attack(player_attack_anim2,player_attack_animHB2, 1)
 
 //Trigger Combo chian
 if(control_attack) && (image_index > 12 )

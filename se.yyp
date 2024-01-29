@@ -152,8 +152,8 @@
   ],
   "RoomOrderNodes": [
     {"roomId":{"name":"Forest","path":"rooms/Forest/Forest.yy",},},
-    {"roomId":{"name":"Dungeon02","path":"rooms/Dungeon02/Dungeon02.yy",},},
     {"roomId":{"name":"Dungeon01","path":"rooms/Dungeon01/Dungeon01.yy",},},
+    {"roomId":{"name":"Dungeon02","path":"rooms/Dungeon02/Dungeon02.yy",},},
     {"roomId":{"name":"Dungeon03","path":"rooms/Dungeon03/Dungeon03.yy",},},
   ],
   "templateType": "game",

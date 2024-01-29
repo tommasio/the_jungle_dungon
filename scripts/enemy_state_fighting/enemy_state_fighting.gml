@@ -28,11 +28,12 @@ function enemy_state_fighting(){
 		else
 		{	
 			if cool_down_counter == 0 {
+				show_debug_message("Finish him!")
 				var _damage_points = damage_points;
 				var _hit_sequence = hit_sequence
 				var _hitbox_sequence = hitbox_sequence
 				 with(obj_player) {
-					process_attack( _hit_sequence,_hitbox_sequence)
+					process_attack( _hit_sequence,_hitbox_sequence, 1)
 					 hit_player(_damage_points);	 
 				 }	 
 				 

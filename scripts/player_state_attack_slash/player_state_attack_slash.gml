@@ -4,7 +4,7 @@ function player_state_attack_slash(){
 	hsp = 0;
 	vsp = 0;
 
-	process_attack(player_attack_anim,player_attack_animHB)
+	process_attack(player_attack_anim,player_attack_animHB, 1)
 
 	//Trigger Combo chian
 	if attack_check()  && (image_index > 15 )
